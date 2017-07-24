@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3FB15ED9DFB7100BCCC3D2D7 /* libPods-ESCategory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E918E5499CFDEC778993849 /* libPods-ESCategory.a */; };
+		9788F12C1F260D9A00F25625 /* UIView+ESHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 9788F12B1F260D9A00F25625 /* UIView+ESHud.m */; };
 		979B44291F25D3750043DFDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B44281F25D3750043DFDA /* main.m */; };
 		979B442C1F25D3750043DFDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B442B1F25D3750043DFDA /* AppDelegate.m */; };
 		979B442F1F25D3750043DFDA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B442E1F25D3750043DFDA /* ViewController.m */; };
@@ -39,6 +40,8 @@
 		0E918E5499CFDEC778993849 /* libPods-ESCategory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ESCategory.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FAAD4470A3341FF63900315 /* Pods-ESCategory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESCategory.release.xcconfig"; path = "Pods/Target Support Files/Pods-ESCategory/Pods-ESCategory.release.xcconfig"; sourceTree = "<group>"; };
 		287278AB37B39F044EDDF1A1 /* Pods-ESCategory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESCategory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ESCategory/Pods-ESCategory.debug.xcconfig"; sourceTree = "<group>"; };
+		9788F12A1F260D9A00F25625 /* UIView+ESHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ESHud.h"; sourceTree = "<group>"; };
+		9788F12B1F260D9A00F25625 /* UIView+ESHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ESHud.m"; sourceTree = "<group>"; };
 		979B44241F25D3750043DFDA /* ESCategory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESCategory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		979B44281F25D3750043DFDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		979B442A1F25D3750043DFDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -221,6 +224,8 @@
 			children = (
 				979B44D81F25E9060043DFDA /* UIView+ESFrame.h */,
 				979B44D91F25E9060043DFDA /* UIView+ESFrame.m */,
+				9788F12A1F260D9A00F25625 /* UIView+ESHud.h */,
+				9788F12B1F260D9A00F25625 /* UIView+ESHud.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -457,6 +462,7 @@
 				979B44CE1F25E4A80043DFDA /* NSDate+ESFunction.m in Sources */,
 				979B44E21F25EA280043DFDA /* UIImage+ESBitmap.m in Sources */,
 				979B442C1F25D3750043DFDA /* AppDelegate.m in Sources */,
+				9788F12C1F260D9A00F25625 /* UIView+ESHud.m in Sources */,
 				979B44DA1F25E9060043DFDA /* UIView+ESFrame.m in Sources */,
 				979B44D21F25E6C20043DFDA /* NSData+ESConversion.m in Sources */,
 				979B44FD1F25EE110043DFDA /* UIApplication+ESFunction.m in Sources */,
