@@ -137,9 +137,6 @@ Pod::Spec.new do |s|
     s.subspec 'UIApplication' do |uiaplication|
       uiaplication.source_files = "ESCategory/UIApplication/*.{h,m}"
     end
-    s.subspec 'UIScreen' do |uiscreen|
-      uiscreen.source_files = "ESCategory/UIScreen/*.{h,m}"
-    end
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
