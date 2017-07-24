@@ -32,7 +32,7 @@
 		979B44F51F25ED390043DFDA /* NSBundle+ESApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B44F41F25ED390043DFDA /* NSBundle+ESApplication.m */; };
 		979B44F91F25ED910043DFDA /* NSUserDefaults+ESStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B44F81F25ED910043DFDA /* NSUserDefaults+ESStorage.m */; };
 		979B44FD1F25EE110043DFDA /* UIApplication+ESFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B44FC1F25EE110043DFDA /* UIApplication+ESFunction.m */; };
-		979B45011F25EE810043DFDA /* UIScreen+ESSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B45001F25EE810043DFDA /* UIScreen+ESSize.m */; };
+		979B45041F25F9B70043DFDA /* UIScreen+ESSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B45031F25F9B70043DFDA /* UIScreen+ESSize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,8 +85,8 @@
 		979B44F81F25ED910043DFDA /* NSUserDefaults+ESStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+ESStorage.m"; sourceTree = "<group>"; };
 		979B44FB1F25EE110043DFDA /* UIApplication+ESFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+ESFunction.h"; sourceTree = "<group>"; };
 		979B44FC1F25EE110043DFDA /* UIApplication+ESFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ESFunction.m"; sourceTree = "<group>"; };
-		979B44FF1F25EE810043DFDA /* UIScreen+ESSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+ESSize.h"; sourceTree = "<group>"; };
-		979B45001F25EE810043DFDA /* UIScreen+ESSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+ESSize.m"; sourceTree = "<group>"; };
+		979B45021F25F9B70043DFDA /* UIScreen+ESSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+ESSize.h"; sourceTree = "<group>"; };
+		979B45031F25F9B70043DFDA /* UIScreen+ESSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+ESSize.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +122,6 @@
 		979B44261F25D3750043DFDA /* ESCategory */ = {
 			isa = PBXGroup;
 			children = (
-				979B44FE1F25EE520043DFDA /* UIScreen */,
 				979B44FA1F25EE030043DFDA /* UIApplication */,
 				979B44F61F25ED790043DFDA /* NSUserDefaults */,
 				979B44F21F25ED1C0043DFDA /* NSBundle */,
@@ -258,6 +257,8 @@
 		979B44EA1F25EC310043DFDA /* UIDevice */ = {
 			isa = PBXGroup;
 			children = (
+				979B45021F25F9B70043DFDA /* UIScreen+ESSize.h */,
+				979B45031F25F9B70043DFDA /* UIScreen+ESSize.m */,
 				979B44EB1F25EC490043DFDA /* UIDevice+ESInfo.h */,
 				979B44EC1F25EC490043DFDA /* UIDevice+ESInfo.m */,
 			);
@@ -298,15 +299,6 @@
 				979B44FC1F25EE110043DFDA /* UIApplication+ESFunction.m */,
 			);
 			path = UIApplication;
-			sourceTree = "<group>";
-		};
-		979B44FE1F25EE520043DFDA /* UIScreen */ = {
-			isa = PBXGroup;
-			children = (
-				979B44FF1F25EE810043DFDA /* UIScreen+ESSize.h */,
-				979B45001F25EE810043DFDA /* UIScreen+ESSize.m */,
-			);
-			path = UIScreen;
 			sourceTree = "<group>";
 		};
 		ABD859098DC92AD67259628B /* Frameworks */ = {
@@ -456,7 +448,7 @@
 				979B44F51F25ED390043DFDA /* NSBundle+ESApplication.m in Sources */,
 				979B442F1F25D3750043DFDA /* ViewController.m in Sources */,
 				979B44E91F25EBC60043DFDA /* NSString+ESFormat.m in Sources */,
-				979B45011F25EE810043DFDA /* UIScreen+ESSize.m in Sources */,
+				979B45041F25F9B70043DFDA /* UIScreen+ESSize.m in Sources */,
 				979B44C41F25E3520043DFDA /* UIColor+ESGenerate.m in Sources */,
 				979B44F91F25ED910043DFDA /* NSUserDefaults+ESStorage.m in Sources */,
 				979B44F11F25ECC50043DFDA /* UITextField+ESProperty.m in Sources */,
