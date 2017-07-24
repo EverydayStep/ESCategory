@@ -10,4 +10,19 @@
 
 @interface NSArray (ESJson)
 
+/**
+ NSArray 转json字符串
+
+ @return json字符串
+ */
+- (NSString *)es_jsonString;
+
+
+/**
+ json字符串转NSArray
+
+ @param string json字符串
+ @return array
+ */
++ (NSArray *)es_arrayFromString:(NSString *)string;
 @end

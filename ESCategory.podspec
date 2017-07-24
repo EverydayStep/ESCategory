@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ESCategory"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "some category for iOS"
 
   # This description is used to generate tags and improve search results.
@@ -94,7 +94,51 @@ Pod::Spec.new do |s|
   # s.source_files  = "ESCategory/NSArray/*.{h,m}"
     s.subspec 'NSArray' do |nsarray|
       nsarray.source_files = "ESCategory/NSArray/*.{h,m}"
-      # category.public_header_files =  "XZUtils/XZUtils/Category/*.h"
+    end
+    s.subspec 'NSAttributedString' do |nsattributedstring|
+      nsattributedstring.source_files = "ESCategory/NSAttributedString/*.{h,m}"
+    end
+    s.subspec 'UIColor' do |uicolor|
+      uicolor.source_files = "ESCategory/UIColor/*.{h,m}"
+    end
+    s.subspec 'NSDate' do |nsdate|
+      nsdate.source_files = "ESCategory/NSDate/*.{h,m}"
+    end
+    s.subspec 'NSData' do |nsdata|
+      nsdata.source_files = "ESCategory/NSData/*.{h,m}"
+    end
+    s.subspec 'NSDictionary' do |nsdictionary|
+      nsdictionary.source_files = "ESCategory/NSDictionary/*.{h,m}"
+    end
+    s.subspec 'UIView' do |uiview|
+      uiview.source_files = "ESCategory/UIView/*.{h,m}"
+    end
+    s.subspec 'UINavigationController' do |uinavigationController|
+      uinavigationController.source_files = "ESCategory/UINavigationController/*.{h,m}"
+    end
+    s.subspec 'UIImage' do |uiimage|
+      uiimage.source_files = "ESCategory/UIImage/*.{h,m}"
+    end
+    s.subspec 'NSString' do |nsstring|
+      nsstring.source_files = "ESCategory/NSString/*.{h,m}"
+    end
+    s.subspec 'UIDevice' do |uidevice|
+      uidevice.source_files = "ESCategory/UIDevice/*.{h,m}"
+    end
+    s.subspec 'UITextField' do |uitextField|
+      uitextField.source_files = "ESCategory/UITextField/*.{h,m}"
+    end
+    s.subspec 'NSBundle' do |nsbundle|
+      nsbundle.source_files = "ESCategory/NSBundle/*.{h,m}"
+    end
+    s.subspec 'NSUserDefaults' do |nsuserDefaults|
+      nsuserDefaults.source_files = "ESCategory/NSUserDefaults/*.{h,m}"
+    end
+    s.subspec 'UIApplication' do |uiaplication|
+      uiaplication.source_files = "ESCategory/UIApplication/*.{h,m}"
+    end
+    s.subspec 'UIScreen' do |uiscreen|
+      uiscreen.source_files = "ESCategory/UIScreen/*.{h,m}"
     end
   # s.exclude_files = "Classes/Exclude"
 
