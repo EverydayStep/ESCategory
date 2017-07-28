@@ -11,6 +11,6 @@
 @interface UIDevice (ESInfo)
 @property (nonatomic, readonly) NSString *es_platform;
 @property (nonatomic, readonly) CGFloat es_systemVersion;
-@property (nonatomic, readonly, assign) BOOL isIphone;
-@property (nonatomic, readonly, assign) BOOL isIpad;
+@property (nonatomic, readonly, assign) BOOL es_isIphone;
+@property (nonatomic, readonly, assign) BOOL es_isIpad;
 @end

@@ -136,11 +136,11 @@
     return [[[UIDevice currentDevice] systemVersion] floatValue];
 }
 
-- (BOOL)isIphone {
+- (BOOL)es_isIphone {
     return (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone);
 }
 
-- (BOOL)isIpad {
+- (BOOL)es_isIpad {
     return (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad);
 }
 @end
