@@ -37,12 +37,11 @@
 #elif TARGET_OS_IPHONE
     //真机
     NSString *platform = [UIDevice currentDevice].es_platform;
-    if ([platform containsString:@"iPhone 4"]) {
+    if ([platform containsString:@"iPhone 4"] || [platform containsString:@"iPhone 3"]) {
         return YES;
     }
     return NO;
 #endif
-    return NO;
 }
 
 - (BOOL)es_isInch_4_0 {
@@ -58,7 +57,6 @@
     }
     return NO;
 #endif
-    return NO;
 }
 
 - (BOOL)es_isInch_4_7 {
@@ -78,7 +76,6 @@
     }
     return NO;
 #endif
-    return NO;
 }
 
 - (BOOL)es_isInch_5_5 {
@@ -94,7 +91,6 @@
     }
     return NO;
 #endif
-    return NO;
 }
 
 - (BOOL)es_isZoomModel {
@@ -108,7 +104,6 @@
     BOOL condition2 = [self es_isInch_5_5] && ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125,1125), [[UIScreen mainScreen] currentMode].size) : NO);
     return condition1 || condition2;
 #endif
-    return NO;
 }
 
 @end
