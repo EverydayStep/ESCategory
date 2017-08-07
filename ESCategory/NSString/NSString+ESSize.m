@@ -10,6 +10,21 @@
 #import <ESUtils/ESUtils.h>
 
 @implementation NSString (ESSize)
+
+- (CGFloat)es_heightWithFont:(UIFont *)font width:(CGFloat)width mode:(NSLineBreakMode)lineBrekMode {
+    if ([ESUtils isEmptyString:self]) {
+        return 0;
+    }
+    
+    CGSize size = [self boundingRectWithSize:CGSizeMake(width, MAXFLOAT)
+                                     options:NSStringDrawingUsesLineFragmentOrigin
+                                  attributes:@{
+                                               NSFontAttributeName:font,
+                                               }
+                                     context:nil].size;
+    return size.height;
+}
+
 - (CGFloat)es_heightWithFont:(UIFont *)font width:(CGFloat)width linespace:(CGFloat)linespace mode:(NSLineBreakMode)lineBrekMode {
     
     if ([ESUtils isEmptyString:self]) {
@@ -28,6 +43,20 @@
                                                }
                                      context:nil].size;
     return size.height;
+}
+
+- (CGFloat)es_widthWithFont:(UIFont *)font height:(CGFloat)height mode:(NSLineBreakMode)lineBrekMode {
+    if ([ESUtils isEmptyString:self]) {
+        return 0;
+    }
+    
+    CGSize size = [self boundingRectWithSize:CGSizeMake(MAXFLOAT, height)
+                                     options:NSStringDrawingUsesLineFragmentOrigin
+                                  attributes:@{
+                                               NSFontAttributeName:font,
+                                               }
+                                     context:nil].size;
+    return size.width;
 }
 
 - (CGFloat)es_widthWithFont:(UIFont *)font height:(CGFloat)height linespace:(CGFloat)linespace mode:(NSLineBreakMode)lineBrekMode {
