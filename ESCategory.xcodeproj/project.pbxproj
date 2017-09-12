@@ -34,6 +34,7 @@
 		979B44F91F25ED910043DFDA /* NSUserDefaults+ESStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B44F81F25ED910043DFDA /* NSUserDefaults+ESStorage.m */; };
 		979B44FD1F25EE110043DFDA /* UIApplication+ESFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B44FC1F25EE110043DFDA /* UIApplication+ESFunction.m */; };
 		979B45041F25F9B70043DFDA /* UIScreen+ESSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B45031F25F9B70043DFDA /* UIScreen+ESSize.m */; };
+		97B514ED1F684D6C0052769A /* UINavigationController+ESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B514EC1F684D6C0052769A /* UINavigationController+ESViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,8 @@
 		979B44FC1F25EE110043DFDA /* UIApplication+ESFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ESFunction.m"; sourceTree = "<group>"; };
 		979B45021F25F9B70043DFDA /* UIScreen+ESSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+ESSize.h"; sourceTree = "<group>"; };
 		979B45031F25F9B70043DFDA /* UIScreen+ESSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+ESSize.m"; sourceTree = "<group>"; };
+		97B514EB1F684D6C0052769A /* UINavigationController+ESViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+ESViewController.h"; sourceTree = "<group>"; };
+		97B514EC1F684D6C0052769A /* UINavigationController+ESViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+ESViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +238,8 @@
 			children = (
 				979B44DC1F25E9A70043DFDA /* UINavigationController+ESNavigationBar.h */,
 				979B44DD1F25E9A70043DFDA /* UINavigationController+ESNavigationBar.m */,
+				97B514EB1F684D6C0052769A /* UINavigationController+ESViewController.h */,
+				97B514EC1F684D6C0052769A /* UINavigationController+ESViewController.m */,
 			);
 			path = UINavigationController;
 			sourceTree = "<group>";
@@ -457,6 +462,7 @@
 				979B44C41F25E3520043DFDA /* UIColor+ESGenerate.m in Sources */,
 				979B44F91F25ED910043DFDA /* NSUserDefaults+ESStorage.m in Sources */,
 				979B44F11F25ECC50043DFDA /* UITextField+ESProperty.m in Sources */,
+				97B514ED1F684D6C0052769A /* UINavigationController+ESViewController.m in Sources */,
 				979B44C81F25E47E0043DFDA /* NSDate+ESComponent.m in Sources */,
 				979B44DE1F25E9A70043DFDA /* UINavigationController+ESNavigationBar.m in Sources */,
 				979B44CE1F25E4A80043DFDA /* NSDate+ESFunction.m in Sources */,
