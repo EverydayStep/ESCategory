@@ -19,7 +19,7 @@
 - (NSAttributedString *)es_setUnderLine:(NSUnderlineStyle)lineStyle color:(UIColor *)color inRange:(NSRange)range;
 - (NSAttributedString *)es_setKern:(CGFloat)kern inRange:(NSRange)range;
 - (NSAttributedString *)es_setParagraphStyle:(NSParagraphStyle *)paragraphStyle inRange:(NSRange)range;
-- (NSAttributedString *)es_setLinespace:(CGFloat)linespace breakModel:(NSLineBreakMode)breakMode inRange:(NSRange)range;
+- (NSAttributedString *)es_setLinespace:(CGFloat)linespace breakMode:(NSLineBreakMode)breakMode inRange:(NSRange)range;
 - (NSAttributedString *)es_setEffect:(NSString *)effect inRange:(NSRange)range;
 - (NSAttributedString *)es_setLigature:(BOOL)isLigature inRange:(NSRange)range;
 - (NSAttributedString *)es_setObliqueness:(CGFloat)obliqueness inRange:(NSRange)range;

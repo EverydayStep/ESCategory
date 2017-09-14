@@ -66,7 +66,7 @@
     return [string copy];
 }
 
-- (NSAttributedString *)es_setLinespace:(CGFloat)linespace breakModel:(NSLineBreakMode)breakMode inRange:(NSRange)range {
+- (NSAttributedString *)es_setLinespace:(CGFloat)linespace breakMode:(NSLineBreakMode)breakMode inRange:(NSRange)range {
     NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
     style.lineSpacing = linespace;
     style.lineBreakMode = breakMode;
