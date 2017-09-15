@@ -17,9 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self.view showHUD:@"fssdsf"];
-    [self.view es_showHint:@"fsfdsfsfs"];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 
