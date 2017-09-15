@@ -11,18 +11,23 @@
 
 @implementation NSString (ESSize)
 
-- (CGFloat)es_heightWithFont:(UIFont *)font width:(CGFloat)width mode:(NSLineBreakMode)lineBrekMode {
-    if ([ESUtils isEmptyString:self]) {
-        return 0;
-    }
-    
-    CGSize size = [self boundingRectWithSize:CGSizeMake(width, MAXFLOAT)
+- (CGSize)es_sizeWithFont:(UIFont *)font size:(CGSize)size paragraphStyle:(NSParagraphStyle *)paragraphStyle {
+    CGSize stringSize = [self boundingRectWithSize:size
                                      options:NSStringDrawingUsesLineFragmentOrigin
                                   attributes:@{
                                                NSFontAttributeName:font,
+                                               NSParagraphStyleAttributeName:paragraphStyle ? : [NSNull null]
                                                }
                                      context:nil].size;
-    return size.height;
+    return stringSize;
+}
+
+
+- (CGFloat)es_heightWithFont:(UIFont *)font width:(CGFloat)width {
+    if ([ESUtils isEmptyString:self]) {
+        return 0;
+    }
+    return [self es_sizeWithFont:font size:CGSizeMake(width, MAXFLOAT) paragraphStyle:nil].height;
 }
 
 - (CGFloat)es_heightWithFont:(UIFont *)font width:(CGFloat)width linespace:(CGFloat)linespace mode:(NSLineBreakMode)lineBrekMode {
@@ -30,51 +35,26 @@
     if ([ESUtils isEmptyString:self]) {
         return 0;
     }
-    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
-    [style setLineBreakMode:lineBrekMode];
-    style = [[NSMutableParagraphStyle alloc] init];
-    [style setLineSpacing:linespace];//调整行间距
-    
-    CGSize size = [self boundingRectWithSize:CGSizeMake(width, MAXFLOAT)
-                                     options:NSStringDrawingUsesLineFragmentOrigin
-                                  attributes:@{
-                                               NSFontAttributeName:font,
-                                               NSParagraphStyleAttributeName:style
-                                               }
-                                     context:nil].size;
-    return size.height;
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle setLineBreakMode:lineBrekMode];
+    [paragraphStyle setLineSpacing:linespace];//调整行间距
+    return [self es_sizeWithFont:font size:CGSizeMake(width, MAXFLOAT) paragraphStyle:paragraphStyle].height;
 }
 
-- (CGFloat)es_widthWithFont:(UIFont *)font height:(CGFloat)height mode:(NSLineBreakMode)lineBrekMode {
+- (CGFloat)es_widthWithFont:(UIFont *)font height:(CGFloat)height {
     if ([ESUtils isEmptyString:self]) {
         return 0;
     }
-    
-    CGSize size = [self boundingRectWithSize:CGSizeMake(MAXFLOAT, height)
-                                     options:NSStringDrawingUsesLineFragmentOrigin
-                                  attributes:@{
-                                               NSFontAttributeName:font,
-                                               }
-                                     context:nil].size;
-    return size.width;
+    return [self es_sizeWithFont:font size:CGSizeMake(MAXFLOAT, height) paragraphStyle:nil].width;
 }
 
 - (CGFloat)es_widthWithFont:(UIFont *)font height:(CGFloat)height linespace:(CGFloat)linespace mode:(NSLineBreakMode)lineBrekMode {
     if ([ESUtils isEmptyString:self]) {
         return 0;
     }
-    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
-    [style setLineBreakMode:lineBrekMode];
-    style = [[NSMutableParagraphStyle alloc] init];
-    [style setLineSpacing:linespace];//调整行间距
-    
-    CGSize size = [self boundingRectWithSize:CGSizeMake(MAXFLOAT, height)
-                                     options:NSStringDrawingUsesLineFragmentOrigin
-                                  attributes:@{
-                                               NSFontAttributeName:font,
-                                               NSParagraphStyleAttributeName:style
-                                               }
-                                     context:nil].size;
-    return size.width;
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle setLineBreakMode:lineBrekMode];
+    [paragraphStyle setLineSpacing:linespace];//调整行间距
+    return [self es_sizeWithFont:font size:CGSizeMake(MAXFLOAT, height) paragraphStyle:paragraphStyle].width;
 }
 @end
