@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ESCategory"
-  s.version      = "0.1.2"
+  s.version      = "0.1.3"
   s.summary      = "some category for iOS"
 
   # This description is used to generate tags and improve search results.
@@ -136,6 +136,9 @@ Pod::Spec.new do |s|
     end
     s.subspec 'UIApplication' do |uiaplication|
       uiaplication.source_files = "ESCategory/UIApplication/*.{h,m}"
+    end
+    s.subspec 'NSNumber' do |nsnumber|
+      nsnumber.source_files = "ESCategory/NSNumber/*.{h,m}"
     end
   # s.exclude_files = "Classes/Exclude"
 
