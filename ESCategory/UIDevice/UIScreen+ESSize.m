@@ -45,7 +45,6 @@
 }
 
 - (BOOL)es_isInch_4_0 {
-    
 #if TARGET_IPHONE_SIMULATOR
     //模拟器
     return self.es_maxLength == 568.0;
@@ -60,7 +59,6 @@
 }
 
 - (BOOL)es_isInch_4_7 {
-    
 #if TARGET_IPHONE_SIMULATOR
     //模拟器
     return self.es_maxLength == 667.0;
@@ -79,7 +77,6 @@
 }
 
 - (BOOL)es_isInch_5_5 {
-    
 #if TARGET_IPHONE_SIMULATOR
     //模拟器
     return self.es_maxLength == 736.0;
@@ -93,8 +90,21 @@
 #endif
 }
 
+- (BOOL)es_isInch_5_8 {
+#if TARGET_IPHONE_SIMULATOR
+    //模拟器
+    return self.es_maxLength == 812.0;
+#elif TARGET_OS_IPHONE
+    //真机
+    NSString *platform = [UIDevice currentDevice].es_platform;
+    if ([platform containsString:@"iPhone X"]) {
+        return YES;
+    }
+    return NO;
+#endif
+}
+
 - (BOOL)es_isZoomModel {
-    
 #if TARGET_IPHONE_SIMULATOR
     //模拟器
     return NO;
@@ -102,6 +112,8 @@
     //真机
     BOOL condition1 = [self es_isInch_4_7] && ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640,1136), [[UIScreen mainScreen] currentMode].size) : NO);
     BOOL condition2 = [self es_isInch_5_5] && ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125,1125), [[UIScreen mainScreen] currentMode].size) : NO);
+    //iPhone X的放大模式
+    
     return condition1 || condition2;
 #endif
 }

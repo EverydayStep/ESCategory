@@ -20,6 +20,7 @@
 @property (nonatomic, readonly) BOOL es_isInch_4_0;
 @property (nonatomic, readonly) BOOL es_isInch_4_7;
 @property (nonatomic, readonly) BOOL es_isInch_5_5;
+@property (nonatomic, readonly) BOOL es_isInch_5_8;
 
 /** 是否是放大模式，仅在真机上适用*/
 @property (nonatomic, readonly) BOOL es_isZoomModel;
