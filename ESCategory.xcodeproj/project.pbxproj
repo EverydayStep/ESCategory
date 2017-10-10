@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3FB15ED9DFB7100BCCC3D2D7 /* libPods-ESCategory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E918E5499CFDEC778993849 /* libPods-ESCategory.a */; };
 		970FD7791F6BAE930010E1BD /* NSNumber+ESFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 970FD7781F6BAE930010E1BD /* NSNumber+ESFormat.m */; };
+		9786BFA41F8C7826007DA398 /* NSString+ESEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 9786BFA31F8C7826007DA398 /* NSString+ESEmoji.m */; };
 		9788F12C1F260D9A00F25625 /* UIView+ESHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 9788F12B1F260D9A00F25625 /* UIView+ESHud.m */; };
 		979B44291F25D3750043DFDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B44281F25D3750043DFDA /* main.m */; };
 		979B442C1F25D3750043DFDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B442B1F25D3750043DFDA /* AppDelegate.m */; };
@@ -44,6 +45,8 @@
 		287278AB37B39F044EDDF1A1 /* Pods-ESCategory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESCategory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ESCategory/Pods-ESCategory.debug.xcconfig"; sourceTree = "<group>"; };
 		970FD7771F6BAE930010E1BD /* NSNumber+ESFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+ESFormat.h"; sourceTree = "<group>"; };
 		970FD7781F6BAE930010E1BD /* NSNumber+ESFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ESFormat.m"; sourceTree = "<group>"; };
+		9786BFA21F8C7826007DA398 /* NSString+ESEmoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ESEmoji.h"; sourceTree = "<group>"; };
+		9786BFA31F8C7826007DA398 /* NSString+ESEmoji.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ESEmoji.m"; sourceTree = "<group>"; };
 		9788F12A1F260D9A00F25625 /* UIView+ESHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ESHud.h"; sourceTree = "<group>"; };
 		9788F12B1F260D9A00F25625 /* UIView+ESHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ESHud.m"; sourceTree = "<group>"; };
 		979B44241F25D3750043DFDA /* ESCategory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESCategory.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -273,6 +276,8 @@
 				979B44E51F25EAA30043DFDA /* NSString+ESSize.m */,
 				979B44E71F25EBC60043DFDA /* NSString+ESFormat.h */,
 				979B44E81F25EBC60043DFDA /* NSString+ESFormat.m */,
+				9786BFA21F8C7826007DA398 /* NSString+ESEmoji.h */,
+				9786BFA31F8C7826007DA398 /* NSString+ESEmoji.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -467,6 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9786BFA41F8C7826007DA398 /* NSString+ESEmoji.m in Sources */,
 				979B44411F25D3A00043DFDA /* NSArray+ESJson.m in Sources */,
 				979B44F51F25ED390043DFDA /* NSBundle+ESApplication.m in Sources */,
 				979B442F1F25D3750043DFDA /* ViewController.m in Sources */,
