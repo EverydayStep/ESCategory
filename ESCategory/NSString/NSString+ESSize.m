@@ -12,12 +12,14 @@
 @implementation NSString (ESSize)
 
 - (CGSize)es_sizeWithFont:(UIFont *)font size:(CGSize)size paragraphStyle:(NSParagraphStyle *)paragraphStyle {
+    NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
+    [attributes setObject:font forKey:NSFontAttributeName];
+    if (paragraphStyle) {
+        [attributes setObject:paragraphStyle forKey:NSParagraphStyleAttributeName];
+    }
     CGSize stringSize = [self boundingRectWithSize:size
                                      options:NSStringDrawingUsesLineFragmentOrigin
-                                  attributes:@{
-                                               NSFontAttributeName:font,
-                                               NSParagraphStyleAttributeName:paragraphStyle ? : [NSNull null]
-                                               }
+                                  attributes:attributes
                                      context:nil].size;
     return stringSize;
 }
