@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ESCategory"
-  s.version      = "0.1.6"
+  s.version      = "0.1.7"
   s.summary      = "some category for iOS"
 
   # This description is used to generate tags and improve search results.
@@ -182,5 +182,5 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "ESUtils", "~> 0.0.4"
-  s.dependency "MBProgressHUD", "1.0.0"
+  s.dependency "MBProgressHUD", "~> 1.1.0"
 end
