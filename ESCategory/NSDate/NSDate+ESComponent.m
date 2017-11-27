@@ -106,4 +106,9 @@
     return chineseShortWeekday[self.es_weekday - 1];
 }
 
+- (NSInteger)es_numberOfDaysInMonth {
+    NSRange range = [self.es_calendar rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:self];
+    return range.length;
+}
+
 @end

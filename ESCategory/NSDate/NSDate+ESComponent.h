@@ -31,4 +31,6 @@
 @property (nonatomic, readonly) NSString * es_chineseDay;
 @property (nonatomic, readonly) NSString * es_chineseLongWeekday;
 @property (nonatomic, readonly) NSString * es_chineseShortWeekday;
+
+@property (nonatomic, assign, readonly) NSInteger es_numberOfDaysInMonth;
 @end

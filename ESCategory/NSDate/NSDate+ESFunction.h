@@ -32,6 +32,7 @@
 - (NSDate *)es_setMinute:(NSInteger)minute;
 - (NSDate *)es_setSecond:(NSInteger)second;
 
-/** 本月有多少天 */
-@property (nonatomic, assign, readonly) NSInteger es_numberOfDaysInMonth;
+- (NSDate *)es_dateForUnits:(NSCalendarUnit)unit;
+
+
 @end

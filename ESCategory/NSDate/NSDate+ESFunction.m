@@ -129,9 +129,9 @@
     return [self es_setValue:second forUnit:NSCalendarUnitSecond];
 }
 
-- (NSInteger)es_numberOfDaysInMonth {
-    NSRange range = [self.es_calendar rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:self];
-    return range.length;
+- (NSDate *)es_dateForUnits:(NSCalendarUnit)unit {
+    NSDateComponents *components = [self.es_calendar components:NSCalendarUnitYear|NSCalendarUnitMonth fromDate:self];
+    return [self.es_calendar dateFromComponents:components];
 }
 
 @end
