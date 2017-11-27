@@ -33,9 +33,5 @@
 - (NSDate *)es_setSecond:(NSInteger)second;
 
 /** 本月有多少天 */
-@property (nonatomic, assign, readonly) NSInteger es_numberOfDaysInCurrentMonth;
-/** 上个月有多少天 */
-@property (nonatomic, assign, readonly) NSInteger es_numberOfDaysInPreviousMonth;
-/** 下个月月有多少天 */
-@property (nonatomic, assign, readonly) NSInteger es_numberOfDaysInNextMonth;
+@property (nonatomic, assign, readonly) NSInteger es_numberOfDaysInMonth;
 @end

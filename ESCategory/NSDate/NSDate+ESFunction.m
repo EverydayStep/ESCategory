@@ -129,17 +129,9 @@
     return [self es_setValue:second forUnit:NSCalendarUnitSecond];
 }
 
-- (NSInteger)es_numberOfDaysInCurrentMonth {
+- (NSInteger)es_numberOfDaysInMonth {
     NSRange range = [self.es_calendar rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:self];
     return range.length;
-}
-
-- (NSInteger)es_numberOfDaysInPreviousMonth {
-    return [[self es_subtractingMonths:1] es_numberOfDaysInCurrentMonth];
-}
-
-- (NSInteger)es_numberOfDaysInNextMonth {
-    return [[self es_addingMonths:1] es_numberOfDaysInCurrentMonth];
 }
 
 @end
