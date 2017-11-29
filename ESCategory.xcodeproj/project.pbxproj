@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3FB15ED9DFB7100BCCC3D2D7 /* libPods-ESCategory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E918E5499CFDEC778993849 /* libPods-ESCategory.a */; };
 		970FD7791F6BAE930010E1BD /* NSNumber+ESFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 970FD7781F6BAE930010E1BD /* NSNumber+ESFormat.m */; };
+		971361D31FCEA1C100E4BA82 /* UIImage+ESGenerate.m in Sources */ = {isa = PBXBuildFile; fileRef = 971361D21FCEA1C100E4BA82 /* UIImage+ESGenerate.m */; };
 		974F22901FCBF6AA00968A13 /* UIView+ESBitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 974F228F1FCBF6AA00968A13 /* UIView+ESBitmap.m */; };
 		9786BFA41F8C7826007DA398 /* NSString+ESEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 9786BFA31F8C7826007DA398 /* NSString+ESEmoji.m */; };
 		9788F12C1F260D9A00F25625 /* UIView+ESHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 9788F12B1F260D9A00F25625 /* UIView+ESHud.m */; };
@@ -46,6 +47,8 @@
 		287278AB37B39F044EDDF1A1 /* Pods-ESCategory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESCategory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ESCategory/Pods-ESCategory.debug.xcconfig"; sourceTree = "<group>"; };
 		970FD7771F6BAE930010E1BD /* NSNumber+ESFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+ESFormat.h"; sourceTree = "<group>"; };
 		970FD7781F6BAE930010E1BD /* NSNumber+ESFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+ESFormat.m"; sourceTree = "<group>"; };
+		971361D11FCEA1C100E4BA82 /* UIImage+ESGenerate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ESGenerate.h"; sourceTree = "<group>"; };
+		971361D21FCEA1C100E4BA82 /* UIImage+ESGenerate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ESGenerate.m"; sourceTree = "<group>"; };
 		974F228E1FCBF6AA00968A13 /* UIView+ESBitmap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ESBitmap.h"; sourceTree = "<group>"; };
 		974F228F1FCBF6AA00968A13 /* UIView+ESBitmap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ESBitmap.m"; sourceTree = "<group>"; };
 		9786BFA21F8C7826007DA398 /* NSString+ESEmoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ESEmoji.h"; sourceTree = "<group>"; };
@@ -270,6 +273,8 @@
 			children = (
 				979B44E01F25EA280043DFDA /* UIImage+ESBitmap.h */,
 				979B44E11F25EA280043DFDA /* UIImage+ESBitmap.m */,
+				971361D11FCEA1C100E4BA82 /* UIImage+ESGenerate.h */,
+				971361D21FCEA1C100E4BA82 /* UIImage+ESGenerate.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -479,6 +484,7 @@
 			files = (
 				9786BFA41F8C7826007DA398 /* NSString+ESEmoji.m in Sources */,
 				979B44411F25D3A00043DFDA /* NSArray+ESJson.m in Sources */,
+				971361D31FCEA1C100E4BA82 /* UIImage+ESGenerate.m in Sources */,
 				979B44F51F25ED390043DFDA /* NSBundle+ESApplication.m in Sources */,
 				979B442F1F25D3750043DFDA /* ViewController.m in Sources */,
 				979B44E91F25EBC60043DFDA /* NSString+ESFormat.m in Sources */,
