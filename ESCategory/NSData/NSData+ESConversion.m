@@ -26,7 +26,7 @@
 }
 
 - (NSDictionary *)es_dictionary {
-   return [self dictionaryWithOption:NSJSONReadingMutableContainers];
+   return [self es_dictionaryWithOption:NSJSONReadingMutableContainers];
 }
 
 - (NSDictionary *)es_dictionaryWithOption:(NSJSONReadingOptions)option {
