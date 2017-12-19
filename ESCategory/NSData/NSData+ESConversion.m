@@ -25,11 +25,11 @@
     return [NSString stringWithString:hexString];
 }
 
-- (NSDictionary *)dictionary {
+- (NSDictionary *)es_dictionary {
    return [self dictionaryWithOption:NSJSONReadingMutableContainers];
 }
 
-- (NSDictionary *)dictionaryWithOption:(NSJSONReadingOptions)option {
+- (NSDictionary *)es_dictionaryWithOption:(NSJSONReadingOptions)option {
     return [NSJSONSerialization JSONObjectWithData:self options:option error:nil];
 }
 

@@ -17,7 +17,7 @@
 
  @return NSDictionary
  */
-- (NSDictionary *)dictionary;
+- (NSDictionary *)es_dictionary;
 
 /**
  NSData -> NSDictionary
@@ -27,6 +27,6 @@
                 NSJSONReadingAllowFragments 所有的都是不可变的
  @return NSDictionary
  */
-- (NSDictionary *)dictionaryWithOption:(NSJSONReadingOptions)option;
+- (NSDictionary *)es_dictionaryWithOption:(NSJSONReadingOptions)option;
 
 @end
