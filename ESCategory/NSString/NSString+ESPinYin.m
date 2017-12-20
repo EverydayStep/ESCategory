@@ -14,7 +14,7 @@
     if (self.length == 0) {
         return @"";
     }
-    NSMutableString *mutableString = [NSMutableString stringWithString:@"好的"];
+    NSMutableString *mutableString = [NSMutableString stringWithString:self];
     //汉字转成拼音
     CFStringTransform((CFMutableStringRef)mutableString, NULL, kCFStringTransformToLatin, false);
     //去掉音调
