@@ -39,6 +39,7 @@
 		979B44F91F25ED910043DFDA /* NSUserDefaults+ESStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B44F81F25ED910043DFDA /* NSUserDefaults+ESStorage.m */; };
 		979B44FD1F25EE110043DFDA /* UIApplication+ESFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B44FC1F25EE110043DFDA /* UIApplication+ESFunction.m */; };
 		979B45041F25F9B70043DFDA /* UIScreen+ESSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B45031F25F9B70043DFDA /* UIScreen+ESSize.m */; };
+		97AE28D32010E70500F2491A /* NSURL+ESParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AE28D22010E70500F2491A /* NSURL+ESParameter.m */; };
 		97B514ED1F684D6C0052769A /* UINavigationController+ESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B514EC1F684D6C0052769A /* UINavigationController+ESViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +107,8 @@
 		979B44FC1F25EE110043DFDA /* UIApplication+ESFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ESFunction.m"; sourceTree = "<group>"; };
 		979B45021F25F9B70043DFDA /* UIScreen+ESSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+ESSize.h"; sourceTree = "<group>"; };
 		979B45031F25F9B70043DFDA /* UIScreen+ESSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+ESSize.m"; sourceTree = "<group>"; };
+		97AE28D12010E70500F2491A /* NSURL+ESParameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+ESParameter.h"; sourceTree = "<group>"; };
+		97AE28D22010E70500F2491A /* NSURL+ESParameter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+ESParameter.m"; sourceTree = "<group>"; };
 		97B514EB1F684D6C0052769A /* UINavigationController+ESViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+ESViewController.h"; sourceTree = "<group>"; };
 		97B514EC1F684D6C0052769A /* UINavigationController+ESViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+ESViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +155,7 @@
 		979B44261F25D3750043DFDA /* ESCategory */ = {
 			isa = PBXGroup;
 			children = (
+				97AE28D02010E6D900F2491A /* NSURL */,
 				970FD7761F6BAE7E0010E1BD /* NSNumber */,
 				979B44FA1F25EE030043DFDA /* UIApplication */,
 				979B44F61F25ED790043DFDA /* NSUserDefaults */,
@@ -344,6 +348,15 @@
 			path = UIApplication;
 			sourceTree = "<group>";
 		};
+		97AE28D02010E6D900F2491A /* NSURL */ = {
+			isa = PBXGroup;
+			children = (
+				97AE28D12010E70500F2491A /* NSURL+ESParameter.h */,
+				97AE28D22010E70500F2491A /* NSURL+ESParameter.m */,
+			);
+			path = NSURL;
+			sourceTree = "<group>";
+		};
 		ABD859098DC92AD67259628B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -497,6 +510,7 @@
 				979B44C41F25E3520043DFDA /* UIColor+ESGenerate.m in Sources */,
 				979B44F91F25ED910043DFDA /* NSUserDefaults+ESStorage.m in Sources */,
 				979B44F11F25ECC50043DFDA /* UITextField+ESProperty.m in Sources */,
+				97AE28D32010E70500F2491A /* NSURL+ESParameter.m in Sources */,
 				970FD7791F6BAE930010E1BD /* NSNumber+ESFormat.m in Sources */,
 				974F22901FCBF6AA00968A13 /* UIView+ESBitmap.m in Sources */,
 				97B514ED1F684D6C0052769A /* UINavigationController+ESViewController.m in Sources */,
