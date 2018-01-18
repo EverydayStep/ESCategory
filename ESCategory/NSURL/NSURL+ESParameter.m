@@ -9,7 +9,7 @@
 #import "NSURL+ESParameter.h"
 
 @implementation NSURL (ESParameter)
-- (NSDictionary *)parameters {
+- (NSDictionary *)es_parameters {
     //查找参数
     NSRange range = [self.absoluteString rangeOfString:@"?"];
     if (range.location == NSNotFound) {

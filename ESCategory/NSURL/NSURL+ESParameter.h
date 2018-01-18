@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSURL (ESParameter)
-- (NSDictionary *)parameters;
+- (NSDictionary *)es_parameters;
 @end
