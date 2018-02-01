@@ -121,7 +121,7 @@
     attachment.bounds = bound;
     NSAttributedString *imageStr = [NSAttributedString attributedStringWithAttachment:attachment];
     NSMutableAttributedString *mutStr = [self mutableCopy];
-    [mutStr insertAttributedString:imageStr atIndex:0];
+    [mutStr insertAttributedString:imageStr atIndex:index];
     return [mutStr copy];
 }
 
