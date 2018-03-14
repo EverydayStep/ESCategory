@@ -14,7 +14,7 @@
 */
 @implementation NSString (ESRegular)
 - (BOOL)es_isChinaPhoneNumber {
-    return YES;
+    return [self es_isChinaTelecomPhoneNumber] || [self es_isChinaUnicomPhoneNumber] || [self es_isChinaMobilePhoneNumber];
 }
 
 - (BOOL)es_isChinaMobilePhoneNumber {
