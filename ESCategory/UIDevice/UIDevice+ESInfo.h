@@ -9,8 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface UIDevice (ESInfo)
-@property (nonatomic, readonly) NSString *es_platform;
-@property (nonatomic, readonly) CGFloat es_systemVersion;
+/** 设备型号 */
+@property (nonatomic, readonly, strong) NSString *es_platform;
+/** 设备系统版本 */
+@property (nonatomic, readonly, assign) CGFloat es_systemVersion;
+/** 设备是否是iPhone */
 @property (nonatomic, readonly, assign) BOOL es_isIphone;
+/** 设备是否是iPad */ 
 @property (nonatomic, readonly, assign) BOOL es_isIpad;
+/** 网络运营商 */
+@property (nonatomic, readonly, strong) NSString *es_carrier;
 @end

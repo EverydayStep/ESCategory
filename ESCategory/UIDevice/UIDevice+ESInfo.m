@@ -8,6 +8,9 @@
 
 #import "UIDevice+ESInfo.h"
 #import <sys/utsname.h>
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>  //为判断网络制式的主要文件
+#import <CoreTelephony/CTCarrier.h> //添加获取客户端运营商 支持
+
 //https://www.theiphonewiki.com/wiki/Models
 @implementation UIDevice (ESInfo)
 - (NSString *)es_platform {
@@ -151,5 +154,10 @@
 
 - (BOOL)es_isIpad {
     return (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad);
+}
+
+- (NSString *)es_carrier {
+    CTTelephonyNetworkInfo *carrier = [[CTTelephonyNetworkInfo alloc] init];
+    return carrier.subscriberCellularProvider.carrierName;
 }
 @end
