@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "UIView+ESHud.h"
-
+#import "NSString+ESRegular.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString *phone = @"170011111";
+    if ([phone es_isChinaTelecomPhoneNumber]) {
+        NSLog(@"YES");
+    } else {
+        NSLog(@"NO");
+    }
 }
 
 
