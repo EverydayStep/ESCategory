@@ -40,6 +40,7 @@
 		979B44F91F25ED910043DFDA /* NSUserDefaults+ESStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B44F81F25ED910043DFDA /* NSUserDefaults+ESStorage.m */; };
 		979B44FD1F25EE110043DFDA /* UIApplication+ESFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B44FC1F25EE110043DFDA /* UIApplication+ESFunction.m */; };
 		979B45041F25F9B70043DFDA /* UIScreen+ESSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 979B45031F25F9B70043DFDA /* UIScreen+ESSize.m */; };
+		97A3B2D2207B310B0089A334 /* UIImage+ESOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A3B2D1207B310B0089A334 /* UIImage+ESOrientation.m */; };
 		97AE28D32010E70500F2491A /* NSURL+ESParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AE28D22010E70500F2491A /* NSURL+ESParameter.m */; };
 		97B514ED1F684D6C0052769A /* UINavigationController+ESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B514EC1F684D6C0052769A /* UINavigationController+ESViewController.m */; };
 /* End PBXBuildFile section */
@@ -110,6 +111,8 @@
 		979B44FC1F25EE110043DFDA /* UIApplication+ESFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ESFunction.m"; sourceTree = "<group>"; };
 		979B45021F25F9B70043DFDA /* UIScreen+ESSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+ESSize.h"; sourceTree = "<group>"; };
 		979B45031F25F9B70043DFDA /* UIScreen+ESSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+ESSize.m"; sourceTree = "<group>"; };
+		97A3B2D0207B310B0089A334 /* UIImage+ESOrientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ESOrientation.h"; sourceTree = "<group>"; };
+		97A3B2D1207B310B0089A334 /* UIImage+ESOrientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ESOrientation.m"; sourceTree = "<group>"; };
 		97AE28D12010E70500F2491A /* NSURL+ESParameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+ESParameter.h"; sourceTree = "<group>"; };
 		97AE28D22010E70500F2491A /* NSURL+ESParameter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+ESParameter.m"; sourceTree = "<group>"; };
 		97B514EB1F684D6C0052769A /* UINavigationController+ESViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+ESViewController.h"; sourceTree = "<group>"; };
@@ -285,6 +288,8 @@
 				979B44E11F25EA280043DFDA /* UIImage+ESBitmap.m */,
 				971361D11FCEA1C100E4BA82 /* UIImage+ESGenerate.h */,
 				971361D21FCEA1C100E4BA82 /* UIImage+ESGenerate.m */,
+				97A3B2D0207B310B0089A334 /* UIImage+ESOrientation.h */,
+				97A3B2D1207B310B0089A334 /* UIImage+ESOrientation.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -408,7 +413,7 @@
 		979B441C1F25D3750043DFDA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = codeLocker;
 				TargetAttributes = {
 					979B44231F25D3750043DFDA = {
@@ -507,6 +512,7 @@
 			files = (
 				9786BFA41F8C7826007DA398 /* NSString+ESEmoji.m in Sources */,
 				979B44411F25D3A00043DFDA /* NSArray+ESJson.m in Sources */,
+				97A3B2D2207B310B0089A334 /* UIImage+ESOrientation.m in Sources */,
 				971361D31FCEA1C100E4BA82 /* UIImage+ESGenerate.m in Sources */,
 				979B44F51F25ED390043DFDA /* NSBundle+ESApplication.m in Sources */,
 				979B442F1F25D3750043DFDA /* ViewController.m in Sources */,
@@ -575,6 +581,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -582,6 +589,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -630,6 +638,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -637,6 +646,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
