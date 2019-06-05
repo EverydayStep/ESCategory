@@ -47,7 +47,7 @@
 - (BOOL)es_isInch_4_0 {
 #if TARGET_IPHONE_SIMULATOR
     //模拟器
-    return self.es_maxLength == 568.0;
+    return self.es_maxLength * self.scale == 1136.0;
 #elif TARGET_OS_IPHONE
     //真机
     NSString *platform = [UIDevice currentDevice].es_platform;
@@ -61,7 +61,7 @@
 - (BOOL)es_isInch_4_7 {
 #if TARGET_IPHONE_SIMULATOR
     //模拟器
-    return self.es_maxLength == 667.0;
+    return self.es_maxLength * self.scale == 1334.0;
 #elif TARGET_OS_IPHONE
     //真机
     NSString *platform = [UIDevice currentDevice].es_platform;
@@ -79,7 +79,7 @@
 - (BOOL)es_isInch_5_5 {
 #if TARGET_IPHONE_SIMULATOR
     //模拟器
-    return self.es_maxLength == 736.0;
+    return self.es_maxLength * self.scale == 2208.0;
 #elif TARGET_OS_IPHONE
     //真机
     NSString *platform = [UIDevice currentDevice].es_platform;
@@ -93,16 +93,45 @@
 - (BOOL)es_isInch_5_8 {
 #if TARGET_IPHONE_SIMULATOR
     //模拟器
-    return self.es_maxLength == 812.0;
+    return self.es_maxLength * self.scale  == 2436.0;
 #elif TARGET_OS_IPHONE
     //真机
     NSString *platform = [UIDevice currentDevice].es_platform;
-    if ([platform containsString:@"iPhone X"]) {
+    if ([platform containsString:@"iPhone X"] && ![platform containsString:@"iPhone XR"]) {
         return YES;
     }
     return NO;
 #endif
 }
+
+- (BOOL)es_isInch_6_1 {
+#if TARGET_IPHONE_SIMULATOR
+    //模拟器
+    return self.es_maxLength * self.scale == 1792.0;
+#elif TARGET_OS_IPHONE
+    //真机
+    NSString *platform = [UIDevice currentDevice].es_platform;
+    if ([platform containsString:@"iPhone XR"]) {
+        return YES;
+    }
+    return NO;
+#endif
+}
+
+- (BOOL)es_isInch_6_5 {
+#if TARGET_IPHONE_SIMULATOR
+    //模拟器
+    return self.es_maxLength * self.scale == 2688.0;
+#elif TARGET_OS_IPHONE
+    //真机
+    NSString *platform = [UIDevice currentDevice].es_platform;
+    if ([platform containsString:@"iPhone XS Max"]) {
+        return YES;
+    }
+    return NO;
+#endif
+}
+
 
 - (BOOL)es_isZoomModel {
 #if TARGET_IPHONE_SIMULATOR
