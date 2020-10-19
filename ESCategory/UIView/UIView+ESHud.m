@@ -16,7 +16,8 @@
     hud.label.text = message;
     hud.contentColor = [UIColor whiteColor];
     hud.removeFromSuperViewOnHide = YES;
-    hud.bezelView.color = [[UIColor blackColor] colorWithAlphaComponent:0.9];
+    hud.bezelView.color = [[UIColor blackColor] colorWithAlphaComponent:0.8];
+    hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
 }
 
 - (void)es_hideHUD{
@@ -43,9 +44,10 @@
     hud.label.font = [UIFont systemFontOfSize:15];
     hud.contentColor = [UIColor whiteColor];
     hud.removeFromSuperViewOnHide = YES;
-    hud.bezelView.color = [[UIColor blackColor] colorWithAlphaComponent:0.9];
+    hud.bezelView.color = [[UIColor blackColor] colorWithAlphaComponent:0.8];
     hud.margin = 10;
     hud.offset = offset;
+    hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
     [hud hideAnimated:YES afterDelay:delay];
 }
 
@@ -56,9 +58,10 @@
     hud.label.font = font;
     hud.contentColor = [UIColor whiteColor];
     hud.removeFromSuperViewOnHide = YES;
-    hud.bezelView.color = [[UIColor blackColor] colorWithAlphaComponent:0.9];
+    hud.bezelView.color = [[UIColor blackColor] colorWithAlphaComponent:0.8];
     hud.margin = 10;
     hud.offset = offset;
+    hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
     [hud hideAnimated:YES afterDelay:delay];
 }
 
