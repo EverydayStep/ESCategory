@@ -16,4 +16,5 @@
 - (void)es_showHint:(NSString *)message delay:(CGFloat)delay;
 - (void)es_showHint:(NSString *)message offset:(CGPoint)offset;
 - (void)es_showHint:(NSString *)message delay:(CGFloat)delay offset:(CGPoint)offset;
+- (void)es_showHint:(NSString *)message delay:(CGFloat)delay offset:(CGPoint)offset font:(UIFont *)font;
 @end
