@@ -49,4 +49,17 @@
     [hud hideAnimated:YES afterDelay:delay];
 }
 
+- (void)es_showHint:(NSString *)message delay:(CGFloat)delay offset:(CGPoint)offset font:(UIFont *)font {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
+    hud.mode = MBProgressHUDModeText;
+    hud.label.text = message;
+    hud.label.font = font;
+    hud.contentColor = [UIColor whiteColor];
+    hud.removeFromSuperViewOnHide = YES;
+    hud.bezelView.color = [[UIColor blackColor] colorWithAlphaComponent:0.9];
+    hud.margin = 10;
+    hud.offset = offset;
+    [hud hideAnimated:YES afterDelay:delay];
+}
+
 @end
