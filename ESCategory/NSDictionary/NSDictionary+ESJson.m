@@ -7,7 +7,6 @@
 //
 
 #import "NSDictionary+ESJson.h"
-#import <ESUtils/ESUtils.h>
 
 @implementation NSDictionary (ESJson)
 - (NSString *)es_jsonString{
@@ -17,8 +16,7 @@
 }
 
 + (NSDictionary *)es_dictionaryFromString:(NSString *)string{
-    
-    if ([ESUtils isEmptyString:string]) return nil;
+    if (string == nil || string.length == 0) { return nil; }
     NSData *jsonData = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:nil];
     return dic;

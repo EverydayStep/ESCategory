@@ -7,7 +7,6 @@
 //
 
 #import "NSDate+ESFormat.h"
-#import <ESUtils/ESUtils.h>
 
 @implementation NSDate (ESFormat)
 - (NSCalendar *)es_calendar {
@@ -15,21 +14,15 @@
 }
 
 - (NSString *)es_stringForFormat:(NSString *)format {
-    if ([ESUtils isEmptyString:format]) {
-        format = @"yyyy-MM-dd HH:mm:ss";
-    }
+    if (format == nil || format.length == 0) { format = @"yyyy-MM-dd HH:mm:ss"; }
     NSDateFormatter *dateFormat = [NSDateFormatter new];
     [dateFormat setDateFormat:format];
     return [dateFormat stringFromDate:self];
 }
 
 + (NSDate *)es_dateFromString:(NSString *)string format:(NSString *)format {
-    if ([ESUtils isEmptyString:string]) {
-        return nil;
-    }
-    if ([ESUtils isEmptyString:format]) {
-        format = @"yyyy-MM-dd HH:mm:ss";
-    }
+    if (string == nil || string.length == 0) { return nil; }
+    if (format == nil || format.length == 0) { format = @"yyyy-MM-dd HH:mm:ss"; }
     NSDateFormatter *dateFormat = [NSDateFormatter new];
     [dateFormat setDateFormat:format];
     return [dateFormat dateFromString:string];

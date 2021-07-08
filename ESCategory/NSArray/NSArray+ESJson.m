@@ -7,7 +7,6 @@
 //
 
 #import "NSArray+ESJson.h"
-#import <ESUtils/ESUtils.h>
 
 @implementation NSArray (ESJson)
 - (NSString *)es_jsonString{
@@ -17,7 +16,7 @@
 }
 
 + (NSArray *)es_arrayFromString:(NSString *)string{
-    if ([ESUtils isEmptyString:string]) return nil;
+    if (string == nil || string.length == 0) { return nil; }
     NSData *jsonData = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSArray *array = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:nil];
     return array;

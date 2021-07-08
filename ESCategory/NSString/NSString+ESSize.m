@@ -7,7 +7,6 @@
 //
 
 #import "NSString+ESSize.h"
-#import <ESUtils/ESUtils.h>
 
 @implementation NSString (ESSize)
 
@@ -26,17 +25,12 @@
 
 
 - (CGFloat)es_heightWithFont:(UIFont *)font width:(CGFloat)width {
-    if ([ESUtils isEmptyString:self]) {
-        return 0;
-    }
+    if (self == nil || self.length == 0) { return 0; }
     return [self es_sizeWithFont:font size:CGSizeMake(width, MAXFLOAT) paragraphStyle:nil].height;
 }
 
 - (CGFloat)es_heightWithFont:(UIFont *)font width:(CGFloat)width linespace:(CGFloat)linespace mode:(NSLineBreakMode)lineBrekMode {
-    
-    if ([ESUtils isEmptyString:self]) {
-        return 0;
-    }
+    if (self == nil || self.length == 0) { return 0; }
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     [paragraphStyle setLineBreakMode:lineBrekMode];
     [paragraphStyle setLineSpacing:linespace];//调整行间距
@@ -44,16 +38,12 @@
 }
 
 - (CGFloat)es_widthWithFont:(UIFont *)font height:(CGFloat)height {
-    if ([ESUtils isEmptyString:self]) {
-        return 0;
-    }
+    if (self == nil || self.length == 0) { return 0; }
     return [self es_sizeWithFont:font size:CGSizeMake(MAXFLOAT, height) paragraphStyle:nil].width;
 }
 
 - (CGFloat)es_widthWithFont:(UIFont *)font height:(CGFloat)height linespace:(CGFloat)linespace mode:(NSLineBreakMode)lineBrekMode {
-    if ([ESUtils isEmptyString:self]) {
-        return 0;
-    }
+    if (self == nil || self.length == 0) { return 0; }
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     [paragraphStyle setLineBreakMode:lineBrekMode];
     [paragraphStyle setLineSpacing:linespace];//调整行间距
